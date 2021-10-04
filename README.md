@@ -11,7 +11,10 @@ NRP              | Nama
 05111940000227   | Rayhan Daffa Alhafish 
 
 ## Pilihan Benda 
-Pada tugas kali ini, saya memilih box airpods 
+Pada tugas kali ini, saya memilih box airpods yang memiliki huruf berawalan B
+
+## Hasil Output 
+Berdasarkan lanjutan tugas sebelumnya, di bawah ini merupakan output dari kodingan yang di sediakan: <br>
 
 ### Foto Sudut Pandang Kanan Atas <br>
 ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/kanan%20atas.jpg)
