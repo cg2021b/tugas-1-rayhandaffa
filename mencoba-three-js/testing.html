@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mencoba Three js</title>
+</head>
+<body>
+    <h1 style="color:#18afdd; font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;">
+    <center style="font-size: x-large; margin-bottom: -20px; margin-top: -10px; font-weight: 800;font-size: xx-large;">Tugas 2 - Mencoba Three js</center>  <br>
+    </h1>
+    <h2 style="color:#18afdd; font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;">
+    <center style="font-size: x-large; margin-bottom: -20px; margin-top: -10px; font-weight: 800;font-size: x-large;">Rayhan Daffa Alhafish - 05111940000227</center>  <br>
+    </h2>	
+
+    <script type="module">      
+        import * as THREE from './js/three.module.js';
+        import {OrbitControls} from './OrbitControls.js';
+        
+        // scene
+        const scene = new THREE.Scene();
+        scene.color = new THREE.Color("rgb(130,112,207)");
+        // setting renderer
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        document.body.appendChild( renderer.domElement );
+
+        // Objects
+        // donut
+        const geometryDonut = new THREE.TorusGeometry( .18, .05, 17, 51 );
+        
+        // sphere
+        const geometrySphere = new THREE.SphereGeometry(.3, 38 , 19);
+        
+        // torus knot
+        const geometryTorusKnot = new THREE.TorusKnotGeometry(.3, .1, 60, 30);
+        
+        // kotak diem
+        const geometryCube = new THREE.BoxGeometry(5, .15, 5);
+        const geometryCubes = new THREE.BoxGeometry(.8,.8,.8);
+        
+        // cylinder
+        const geometryCylinder = new THREE.CylinderGeometry(.2, .2, 2, 32, 32);
+
+
+        // Materials
+        // donut
+        const materialDonut = new THREE.MeshBasicMaterial( {wireframe: false} );
+        materialDonut.color = new THREE.Color("rgb(7,55,99)");
+        // sphere
+        const materialSphere = new THREE.MeshPhysicalMaterial( {wireframe: true} );
+        materialSphere.color = new THREE.Color("rgb(74,48,186)");
+        // torus knot
+        const materialTKnot = new THREE.MeshStandardMaterial( {wireframe:false} );
+        materialTKnot.color = new THREE.Color(0xaa32cf);
+        // cube
+        const materialCube = new THREE.MeshToonMaterial( {wireframe: false});
+        materialCube.color = new THREE.Color("rgb(130,112,207)");
+        
+        const materialCubes = new THREE.MeshToonMaterial( {wireframe: false, color: 'purple'});
+        // cylinder
+        const materialCylinder = new THREE.MeshNormalMaterial( {wireframe: true} );
+
+        // Mesh
+        // donut
+        const donut = new THREE.Mesh(geometryDonut, materialDonut);
+        scene.add(donut);
+
+        // sphere
+        const sphere = new THREE.Mesh(geometrySphere, materialSphere);
+        scene.add(sphere);
+
+        // Torus Knot
+        const TKnot = new THREE.Mesh(geometryTorusKnot, materialTKnot);
+        scene.add(TKnot);
+
+        // kotak
+        const cube = new THREE.Mesh(geometryCube, materialCube);
+        scene.add(cube);
+
+        // cylinder
+        const cylinder = new THREE.Mesh(geometryCylinder, materialCylinder);
+        scene.add(cylinder);
+
+        // kotak
+        const cubes = new THREE.Mesh(geometryCubes, materialCubes);
+        scene.add(cubes);
+
+        // Start Position
+        // donut
+        donut.position.z = -1;
+        // sphere
+        sphere.position.y = 2;
+        // torus knot
+        TKnot.position.x = -.2;
+        TKnot.position.z = .3;
+        // kotak
+        cube.position.y = -1.1;
+        cubes.position.z = 1.8;
+        // cylinder
+        cylinder.position.z = -1.5;
+        cylinder.position.y = .5;
+
+        // Lights
+        // ambient
+        const ambientLight = new THREE.AmbientLight(0x5c5c5c, 1)
+        scene.add(ambientLight);
+
+        // point
+        const pointLight = new THREE.PointLight(0xffffff, .8);
+        pointLight.position.x = 1
+        pointLight.position.y = 2
+        pointLight.position.z = 3
+        scene.add(pointLight);
+
+        // hemisphere
+        const hemiSphereLight = new THREE.HemisphereLightProbe(0x00ffff, 0.3)
+        scene.add(hemiSphereLight);
+
+        // directional
+        const directionalLight = new THREE.DirectionalLight(0xffff00, 0.8);
+        scene.add(directionalLight);
+
+        // spotlight
+        const spotLight = new THREE.SpotLight(0x000000, 1);
+        spotLight.position.set(100, 200, 300);
+        scene.add(spotLight);
+
+        // Camera
+        const camera = new THREE.PerspectiveCamera( 85, window.innerWidth / window.innerHeight, 0.1, 1000 );
+        camera.position.x = 1;
+        camera.position.y = 2;
+        camera.position.z = 5;
+        scene.add(camera);
+
+        // Control
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.autoRotate = true;
+
+
+        const clock = new THREE.Clock();
+        let speed = 0.0227;
+        const tick = () =>
+        {
+            const elapsedTime = clock.getElapsedTime();
+
+            // Update objects
+            // Update Orbital Controls
+            controls.update()
+
+            // DONUT
+            if (donut.position.x >=1 || donut.position.x <=-1) 
+                speed = -speed;
+            donut.position.x += speed;
+            donut.position.y += speed;
+            donut.position.z += speed;
+
+            donut.rotation.z += 0.05;
+
+            // SPHERE
+            sphere.rotation.y += 0.03;
+            sphere.rotation.x += 0.02;
+
+            // torus knot
+            TKnot.rotation.x += .02;
+            TKnot.rotation.y += .02;
+
+            // cylinder
+            cylinder.rotation.y += speed;
+            cylinder.rotation.z += .05;
+
+            // cubes
+            cubes.rotation.y += .05;
+
+            // Render
+            renderer.render(scene, camera);
+
+            // Call tick again on the next frame
+            window.requestAnimationFrame(tick);
+        }
+        tick();
+      
+    </script>
+</body>
+</html>
+
+    
