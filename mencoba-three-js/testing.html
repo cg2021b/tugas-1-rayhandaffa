@@ -22,12 +22,13 @@
         // scene
         const scene = new THREE.Scene();
         scene.color = new THREE.Color("rgb(130,112,207)");
+        
         // setting renderer
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize( window.innerWidth, window.innerHeight );
         document.body.appendChild( renderer.domElement );
 
-        // Objects
+        // OBJEK-OBJEK
         // donut
         const geometryDonut = new THREE.TorusGeometry( .18, .05, 17, 51 );
         
@@ -39,31 +40,38 @@
         
         // kotak diem
         const geometryCube = new THREE.BoxGeometry(5, .15, 5);
+        
+        // kotak goyang2
         const geometryCubes = new THREE.BoxGeometry(.8,.8,.8);
         
         // cylinder
         const geometryCylinder = new THREE.CylinderGeometry(.2, .2, 2, 32, 32);
 
 
-        // Materials
+        // MATERIALS
         // donut
         const materialDonut = new THREE.MeshBasicMaterial( {wireframe: false} );
         materialDonut.color = new THREE.Color("rgb(7,55,99)");
+        
         // sphere
         const materialSphere = new THREE.MeshPhysicalMaterial( {wireframe: true} );
         materialSphere.color = new THREE.Color("rgb(74,48,186)");
+        
         // torus knot
         const materialTKnot = new THREE.MeshStandardMaterial( {wireframe:false} );
         materialTKnot.color = new THREE.Color(0xaa32cf);
-        // cube
+        
+        // kotak diem
         const materialCube = new THREE.MeshToonMaterial( {wireframe: false});
         materialCube.color = new THREE.Color("rgb(130,112,207)");
         
+        // kotak goyang2
         const materialCubes = new THREE.MeshToonMaterial( {wireframe: false, color: 'purple'});
+        
         // cylinder
         const materialCylinder = new THREE.MeshNormalMaterial( {wireframe: true} );
 
-        // Mesh
+        // BUAT NAMPILIN OBJEK
         // donut
         const donut = new THREE.Mesh(geometryDonut, materialDonut);
         scene.add(donut);
@@ -76,7 +84,7 @@
         const TKnot = new THREE.Mesh(geometryTorusKnot, materialTKnot);
         scene.add(TKnot);
 
-        // kotak
+        // kotak diem
         const cube = new THREE.Mesh(geometryCube, materialCube);
         scene.add(cube);
 
@@ -84,26 +92,30 @@
         const cylinder = new THREE.Mesh(geometryCylinder, materialCylinder);
         scene.add(cylinder);
 
-        // kotak
+        // kotak goyang2
         const cubes = new THREE.Mesh(geometryCubes, materialCubes);
         scene.add(cubes);
 
-        // Start Position
+        // START POSITIONS
         // donut
         donut.position.z = -1;
+        
         // sphere
         sphere.position.y = 2;
+        
         // torus knot
         TKnot.position.x = -.2;
         TKnot.position.z = .3;
+        
         // kotak
         cube.position.y = -1.1;
         cubes.position.z = 1.8;
+        
         // cylinder
         cylinder.position.z = -1.5;
         cylinder.position.y = .5;
 
-        // Lights
+        // LIGHTS
         // ambient
         const ambientLight = new THREE.AmbientLight(0x5c5c5c, 1)
         scene.add(ambientLight);
@@ -128,18 +140,18 @@
         spotLight.position.set(100, 200, 300);
         scene.add(spotLight);
 
-        // Camera
+        // CAMERA
         const camera = new THREE.PerspectiveCamera( 85, window.innerWidth / window.innerHeight, 0.1, 1000 );
         camera.position.x = 1;
         camera.position.y = 2;
         camera.position.z = 5;
         scene.add(camera);
 
-        // Control
+        // CONTROL
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.autoRotate = true;
 
-
+        // WAKTU PAS GOYANG2
         const clock = new THREE.Clock();
         let speed = 0.0227;
         const tick = () =>
