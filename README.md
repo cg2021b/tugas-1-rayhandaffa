@@ -28,16 +28,17 @@ DEPAN ATAS                                                                      
 -------------------------------------------------------------------------------------------------|-----------
 ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/depan%20atas.jpg)| ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/belakang%20atas.jpg)
 
-# Tugas 2 - Three JS
+# Tugas 1 - Three JS
 
-Laporan Tugas 2 - Penerapan Three js dengan menggambar objek 3 dimensi 
+Laporan Tugas 1 - Penerapan Three js dengan menggambar objek 3 dimensi 
 
 NRP              | Nama
 -----------------|-----------
 05111940000227   | Rayhan Daffa Alhafish
 
 ## Penugasan 
-1. Menggambarkan objek 3D (3 dimensi) dengan adanya lighting yang bisa membedakan 
+1. Menggambarkan objek 3D (3 dimensi) 
+2. Harus menggunakan beberapa materials dan jenis lighting (AmbientLight, HemisphereLight, DirectionalLight, PointLight, Spotlights) 
 
 ## Hasil Ouput 
 Dengan tugas kedua ini berikut saya sertakan hasil visualisasi dari kodingan yang telah dibuat : <br>
