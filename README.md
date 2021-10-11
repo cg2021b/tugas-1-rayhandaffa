@@ -42,5 +42,5 @@ NRP              | Nama
 
 ## Hasil Ouput 
 Dengan tugas kedua ini berikut saya sertakan hasil visualisasi dari kodingan yang telah dibuat : <br>
- ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/visualisasi-task-2-threejs.gif)
+ ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/output-visualisasi-task2.gif)
 
