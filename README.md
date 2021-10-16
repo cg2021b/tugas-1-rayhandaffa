@@ -28,7 +28,7 @@ DEPAN ATAS                                                                      
 -------------------------------------------------------------------------------------------------|-----------
 ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/depan%20atas.jpg)| ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/belakang%20atas.jpg)
 
-# Tugas 2 - Mencoba Three JS
+# Tugas 2 - Mencoba Three JS : Geometry, Material, and Lighting
 
 Laporan Tugas 2 - Penerapan Three js dengan menggambar objek 3 dimensi 
 
