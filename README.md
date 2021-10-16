@@ -28,9 +28,9 @@ DEPAN ATAS                                                                      
 -------------------------------------------------------------------------------------------------|-----------
 ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/depan%20atas.jpg)| ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/belakang%20atas.jpg)
 
-# Tugas 1 - Three JS
+# Tugas 2 - Mencoba Three JS : Geometry, Material, and Lighting
 
-Laporan Tugas 1 - Penerapan Three js dengan menggambar objek 3 dimensi 
+Laporan Tugas 2 - Penerapan Three js dengan menggambar objek 3 dimensi 
 
 NRP              | Nama
 -----------------|-----------
@@ -42,5 +42,24 @@ NRP              | Nama
 
 ## Hasil Ouput 
 Dengan tugas kedua ini berikut saya sertakan hasil visualisasi dari kodingan yang telah dibuat : <br>
- ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/visualisasi-task-2-threejs.gif)
+ ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/output-visualisasi-task2.gif)
+ 
+# Tugas 3 - 
+
+Laporan Tugas 3 - 
+
+NRP              | Nama
+-----------------|-----------
+05111940000227   | Rayhan Daffa Alhafish
+
+## Penugasan 
+1. Buat obyek baru yang muncul diposisi dan warna secara random yang semakin lama semakin cepat. 
+2. Berhenti tambah obyek baru jika jumlah obyek sudah mencapai batas tertentu.
+3. Pilihlah 2 obyek  pasangan yang memiliki warna yang sama. Jika 2 obyek pasangan telah terpilih, hapus obyek-obyek tersebut dan tambah skor 
+
+
+## Hasil Output 
+Berdasarkan kodingan yang telah tersedia, berikut adalah hasil output-nya: <br> 
+
+
 
