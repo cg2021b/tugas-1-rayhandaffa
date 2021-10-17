@@ -45,9 +45,9 @@ Dengan tugas kedua ini berikut saya sertakan hasil visualisasi dari kodingan yan
 
 ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/output-visualisasi-mencoba-three-js.gif)
  
-# Tugas 3 - 
+# Tugas 3 - Mencoba Three JS : User Interaction pada games Cari Kembaranku!
 
-Laporan Tugas 3 - 
+Laporan Tugas 3 - Penerapan Three JS pada games mencari bangun yang sama dan warna yang sama.
 
 NRP              | Nama
 -----------------|-----------
@@ -61,6 +61,8 @@ NRP              | Nama
 
 ## Hasil Output 
 Berdasarkan kodingan yang telah tersedia, berikut adalah hasil output-nya: <br> 
+
+![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/output-visualisasi-task-3-grafkomb.gif)
 
 
 
