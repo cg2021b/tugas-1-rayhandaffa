@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./../task-3-grafkomb/three.min.js"></script>
+    <script src="./../task-3-grafkomb/controls/OrbitControls.js"></script>
+    <script src="./../task-3-grafkomb/controls/PointerLockControls.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Tugas 3 - Threejs</title>
+  </head>
+  <body>
+    <h1 class="judul">Tugas 3 : Cari Kembaranku!</h1>
+    <h2>Rayhan Daffa Alhafish - 05111940000227</h2>
+    <div class="deskripsi">
+      <div class="information">
+        <div class="status">
+          <p>Seleksi: <span id="seleksi">0</span></p>
+          <p>Score: <span id="score">0</span></p>
+
+          <button id="play-button">Play</button>
+        </div>
+
+        <div class="note">
+          <h4>Keterangan:</h4>
+          <ol>
+            <li>Seleksi digunakan untuk status ketika menyeleksi kubus</li>
+            <li>Score merupakan poin yang diperoleh pemain</li>
+            <li>Drag canvas untuk merubah angle kamera</li>
+          </ol>
+        </div>
+      </div>
+
+      <h2 id="gameover">Game Over</h2>
+    </div>
+
+    <section class="preview-canvas">
+      <canvas class="webgl"> Browser tidak mendukung HTML 5 </canvas>
+    </section>
+
+    <script src="util.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
