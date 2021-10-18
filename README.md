@@ -10,7 +10,7 @@ NRP              | Nama
 1. Mencari benda di sekitar yang berawalan B, G, atau L 
 2. Letakkan benda tersebut di atas permukaan datar 
 3. Ambil foto benda tersebut dari empat sudut pandang yang berbeda: kanan atas, kiri atas, belakang atas, depan atas (sudut kemiringan bebas)
-4. Membuat aplikasi Grafika WEB GL berdarakan foto yang telah di foto.
+4. Membuat aplikasi Grafika WEB GL berdasarkan benda yang telah di foto.
 
 ## Pilihan Benda 
 Pada tugas kali ini, saya memilih box airpods yang memiliki huruf berawalan B
