@@ -24,6 +24,7 @@ Untuk dapat melihat hasil output kodingan secara menyeluruh dapat dilihat pada l
 
 [Visualisasi Output Tugas 1 - Penerapan Aplikasi penggambaran objek 3 Dimensi dengan menggunakan WEB GL](https://cg2021b.github.io/tugas-1-rayhandaffa/task-1-grafkomb/)
 
+Pergerakan benda berdasarkan kecepatan sesuai dengan 0xxx dengan x merupakan 3 digit NRP terakhir yaitu 0227
 ## Foto 
 KANAN ATAS                                                                                       | KIRI ATAS
 -------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------
