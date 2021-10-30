@@ -78,3 +78,14 @@ Hasil output kodingan pada tugas 3 secara menyeluruh dapat dilihat pada link di 
 
 [Visualisasi Output Tugas 3 - Mencoba Three JS : User Interaction pada games Cari Kembaranku!](https://cg2021b.github.io/tugas-1-rayhandaffa/task-3-grafkomb/)
 
+# Tugas 4 - Mencoba Three JS : Control, Texture, Panorama, Shadow, Fog, Loading model dan Realistic Reflective 
+
+Laporan Tugas 4 - Penerapan Three JS dengan menggunakan control, texture, shadow, dll
+
+NRP              | Nama
+-----------------|-----------
+05111940000227   | Rayhan Daffa Alhafish
+
+## Penugasan 
+
+## Hasil Output 
