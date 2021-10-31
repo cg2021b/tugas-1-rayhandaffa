@@ -87,5 +87,13 @@ NRP              | Nama
 05111940000227   | Rayhan Daffa Alhafish
 
 ## Penugasan 
+1. Penerapan Three JS pada Control, Texture, Panorama, Shadow, Fog, Loading model dan Realistic Reflective 
+2. Harus semuanya ada 
 
 ## Hasil Output 
+
+Berdasarkan kodingan yang telah tersedia dapat dilihat di bawah ini : <br>
+
+
+Hasil menyeluruh kodingan di Tugas 4 dapat dilihat di bawah ini : <br> 
+[Visualisasi Ouput Tugas 4 : Mencoba Three JS : Control, Texture, Panorama, Shadow, Fog, Loading model dan Realistic Reflective ](https://cg2021b.github.io/tugas-1-rayhandaffa/task-4-grafkomb/)
