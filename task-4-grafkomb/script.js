@@ -37,7 +37,8 @@ scene.fog = new THREE.FogExp2('0xffffff', 0.1);
 
 /** 
  * lights 
- */ 
+ */
+
  const direcLight = new THREE.DirectionalLight(0xffffff, 1);
  direcLight.position.set(0, 10, 0);
  direcLight.target.position.set(0, 0, 0);
@@ -75,7 +76,7 @@ scene.fog = new THREE.FogExp2('0xffffff', 0.1);
   * Camera
   */
  // Base camera
- const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
+ const camera = new THREE.PerspectiveCamera(85, sizes.width / sizes.height, 0.1, 100);
  camera.position.x = 0;
  camera.position.y = 6;
  camera.position.z = 10;
@@ -128,17 +129,18 @@ scene.fog = new THREE.FogExp2('0xffffff', 0.1);
   */
  const materials = [];
  const loaderGLTF = new GLTFLoader();
- loaderGLTF.load('./model/kursi.gltf', function(gltf){
+ loaderGLTF.load('./model/scene.gltf', function(gltf){
      console.log(gltf);
      const root = gltf.scene;
      scene.add(root);
      console.log(dumpObject(root).join('\n'));
-     root.traverse(function(object){
+     root.traverse(function(object)
+     {
          if ( object.isMesh ) 
          {
              object.castShadow = true;
              object.receiveShadow = true;
-             roughnessMipmapper.generateMipmaps( object.material );
+             roughnessMipmapper.generateMipmaps( object.material);
  
          }
      });
@@ -151,8 +153,8 @@ scene.fog = new THREE.FogExp2('0xffffff', 0.1);
  })
  
  
- const geometrySphere = new THREE.SphereGeometry(.3, 32 , 16);
- const materialDisco = new THREE.MeshPhysicalMaterial( {wireframe: false, map: loaderTexture.load('./texture/disco-ball.jpg')} );
+ const geometrySphere = new THREE.SphereGeometry(.3, 48 , 24);
+ const materialDisco = new THREE.MeshPhysicalMaterial( {wireframe: false, map: loaderTexture.load('./texture/panorama.jpg')} );
  materialDisco.color = new THREE.Color(0xffffff);
  const disco = new THREE.Mesh(geometrySphere, materialDisco);
  disco.position.y = 5;
