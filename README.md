@@ -94,10 +94,7 @@ NRP              | Nama
 
 Berdasarkan kodingan yang telah tersedia dapat dilihat di bawah ini : <br>
 
-<<<<<<< HEAD
 ![asset-img](https://github.com/cg2021b/tugas-1-rayhandaffa/blob/main/asset-img/output-visual-task-4-grafkomb.gif)
-=======
->>>>>>> 3b2e15a1cf1e25ae774e924699b271fd3dd1c79b
 
 Hasil menyeluruh kodingan di Tugas 4 dapat dilihat di bawah ini : <br> 
 [Visualisasi Ouput Tugas 4 : Mencoba Three JS : Control, Texture, Panorama, Shadow, Fog, Loading model dan Realistic Reflective ](https://cg2021b.github.io/tugas-1-rayhandaffa/task-4-grafkomb/)
