@@ -1,20 +1,19 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
 
-html,
-body
-{
-    height: 100vh;
-    font-family: 'Poppins';
-}
 
-.webgl
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
-}
+
+body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(128, 153, 177);
+  }
+ 
+   
+  .judul 
+  {
+    text-align: center;
+    color: white;
+    font-size: 200%
+  }
