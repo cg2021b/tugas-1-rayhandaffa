@@ -130,6 +130,7 @@ scene.fog = new THREE.FogExp2('0xffffff', 0.1);
  const materials = [];
  const loaderGLTF = new GLTFLoader();
  loaderGLTF.load('./model/scene.gltf', function(gltf){
+    gltf.scene.scale.set(0.5, 0.5, 0.5);
      console.log(gltf);
      const root = gltf.scene;
      scene.add(root);
@@ -153,17 +154,17 @@ scene.fog = new THREE.FogExp2('0xffffff', 0.1);
  })
  
  
- const geometrySphere = new THREE.SphereGeometry(.1, 48 , 24);
+ const geometrySphere = new THREE.SphereGeometry(.55, 48 , 24);
  const materialDisco = new THREE.MeshPhysicalMaterial( {wireframe: false, map: loaderTexture.load('./texture/panorama.jpg')} );
  materialDisco.color = new THREE.Color(0xffffff);
  const disco = new THREE.Mesh(geometrySphere, materialDisco);
- disco.position.y = .5;
+ disco.position.y = 6.5;
  scene.add(disco);
  
  const refMat = new THREE.MeshBasicMaterial({
      envMap: sphereCamera.renderTarget.texture,
  });
- const refGeo = new THREE.SphereGeometry(.1, 48 , 24);
+ const refGeo = new THREE.SphereGeometry(.55, 48 , 24);
  
  
  const geometryBox = new THREE.BoxGeometry(40, 0.2, 40);
